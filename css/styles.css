@@ -1,0 +1,279 @@
+/*  Fonts
+-----
+font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+h1,
+h2,
+p {
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* =================
+Typography
+================= */
+
+h1 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #143774;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.subtitle {
+  font-weight: 700;
+  color: #1792d2;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+/* =================
+Layout
+================= */
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  background: #f8f8f8;
+  padding: 2em 0;
+}
+
+@media (max-width: 675px) {
+  .container-nav {
+    flex-direction: column;
+  }
+
+  header {
+    text-align: center;
+  }
+}
+
+/* navigation */
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-left: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #707070;
+  font-weight: 700;
+  padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #1792d2;
+}
+
+.current-page {
+  border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+  color: #707070;
+}
+
+.row1 {
+  font-family: "Lora", serif;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+.row1 > .col1 {
+  flex: 2;
+}
+.row1 > .col1 img {
+  width: 614px;
+  height: 308px;
+}
+.row1 > .col1 > small {
+  margin-top: 1.5em;
+  color: #707070;
+  display: block;
+}
+.row1 > .col2 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+  text-align: center;
+  border: 2em solid #ebebeb;
+  color: #143774;
+  text-transform: uppercase;
+  width: 240px;
+  height: auto;
+}
+.row1 > .col2 > h2 {
+  margin-top: 0;
+}
+.row1 .col2 img {
+  width: 150px;
+  height: 133px;
+  margin: 0 auto;
+}
+.row1 .col2 p {
+  width: 150px;
+  margin: 1em auto;
+  margin-bottom: 0;
+  line-height: 1.5em;
+  text-transform: none;
+}
+
+/* ROW TWO */
+.row2 {
+  font-family: "Lora", serif;
+  display: flex;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 2em;
+  gap: 1em;
+}
+.row2 > .col1 {
+  flex: 3.5;
+  margin: 0.5em;
+}
+.row2 > .col2 {
+  flex: 1;
+}
+.col1 > .col1-inner1 {
+  border-bottom: 2px solid #8080807c;
+  margin: 0.5em 0;
+}
+.col1 > .col1-inner2 img,
+.col1 > .col1-inner3 img,
+.col1 > .col1-inner4 img {
+  width: 200px;
+  object-fit: cover;
+  height: 150px;
+  margin-bottom: 0.5em;
+}
+.col1 > .col1-inner2,
+.col1 > .col1-inner3,
+.col1 > .col1-inner4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  margin: 0.5em 0;
+}
+
+.row2 > .col2 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 1em;
+  text-align: center;
+  border: 2em solid #ebebeb;
+  color: #143774;
+  text-transform: uppercase;
+  width: 240px;
+  height: auto;
+  margin: 0;
+}
+.row2 .col2 img {
+  width: 150px;
+  height: 133px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+.content {
+  height: 100%;
+}
+footer {
+  margin-top: 2em;
+  background-color: #143774;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #e3e2e288;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+footer #copy {
+  font-weight: normal;
+  color: #a6a2a28b;
+}
+
+@media (max-width: 1020px) {
+  .row1,
+  .row2 * {
+    margin: 0.8em auto;
+  }
+  .row1 {
+    flex-direction: column;
+  }
+  .row1 > .col1 img {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    object-fit: cover;
+  }
+  .row1 > .col2 {
+    display: none;
+  }
+  .row2 {
+    flex-direction: column;
+  }
+  .row2 > .col2 {
+    /* display: none; */
+    width: auto;
+  }
+  .col1 > .col1-inner2,
+  .col1 > .col1-inner3,
+  .col1 > .col1-inner4 {
+    gap: 0.5em;
+  }
+  .col2 > .col2-inner1,
+  .col2 > .col2-inner2,
+  .col2 > .col2-inner3 {
+    width: 100%;
+  }
+  .col2 > .col2-inner1 img,
+  .col2 > .col2-inner2 img,
+  .col2 > .col2-inner3 img {
+    width: 90%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 675px) {
+  nav ul {
+    flex-direction: column;
+    background-color: red !important;
+  }
+
+  nav li {
+    margin: 0.5em 0;
+  }
+}
